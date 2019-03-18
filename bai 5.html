@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type = "text" id = "txt1">
+<input type="button" onclick="add()" value="Them">
+<input type="button" onclick="kiemtra()" value="Tim so nho nhat">
+<script>
+    let arr = [];
+    function add() {
+        let a = parseInt(document.getElementById('txt1').value);
+        arr.push(a);
+        document.getElementById('txt1').value ="";
+    }
+    function check(b) {
+        let min = b[0];
+        for(let i =0;i<b.length;i++){
+           if( b[i]<min) {
+               min = b[i];
+           }
+        }return min
+    }
+    function kiemtra() {
+        let min = check(arr);
+        document.write(min);
+
+    }
+</script>
+</body>
+</html>

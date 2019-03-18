@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="txt1">
+<input type="button" value="Binh phuong" onclick="square()">
+<div id="kq"></div>
+<script>
+    function square() {
+        let a = parseInt(document.getElementById('txt1').value);
+         let number = a*a;
+         document.getElementById('kq').innerHTML=number
+
+    }
+
+</script>
+</body>
+</html>

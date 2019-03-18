@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id ="txt1">
+<input type="button" value="Them" onclick="add()">
+<input type="button" value="Dao cho " onclick="dao()">
+<script>
+    let arr =[];
+    function add() {
+        let a =document.getElementById('txt1').value;
+        arr.push(a);
+        document.getElementById('txt1').value ="";
+    }
+    function check(arr) {
+        let temp = []; let j = 0;
+       for ( let i = arr.length-1; i >= 0; i--) {
+           temp[j] = arr[i];
+           j++;
+        }
+       arr = temp;
+       return arr;
+    }
+    function dao() {
+        let a = check(arr);
+        document.write(a);
+    }
+</script>
+</body>
+</html>

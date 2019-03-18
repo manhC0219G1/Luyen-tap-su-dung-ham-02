@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+ Nhap ban kinh: <input type="text" id = "txt1">
+<input type="button" value="Tinh dien tich" onclick="tinh()">
+<input type="button" value="Tinh chu vi" onclick="sum()">
+<input type="text"  disabled id ="txt2">
+<script>
+    function tinh() {
+        let number = parseInt(document.getElementById('txt1').value);
+        document.getElementById('txt2').value =(number*number*3.14);
+    }
+    function sum() {
+        let number = parseInt(document.getElementById('txt1').value);
+        document.getElementById('txt2').value =(number*2*3.14);
+    }
+</script>
+ </body>
+</html>
